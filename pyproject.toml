@@ -5,12 +5,19 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "text-repeat-lines"
 version = "1.0.0"
-description = "Repeat each input line a fixed number of times"
+description = "Repeat each line N times (global N or per-line count prefix)"
 readme = "README.md"
 requires-python = ">=3.9"
-license = {text = "MIT"}
-authors = [{name = "TataneSan"}]
-keywords = ["text", "repeat", "cli", "lines"]
+license = { text = "MIT" }
+authors = [{ name = "TataneSan" }]
+keywords = ["text", "repeat", "lines", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
 
 [project.scripts]
 text-repeat-lines = "text_repeat_lines.cli:main"
